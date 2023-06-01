@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21A145C3F0ADF1472CB72D23 /* Pods_liveap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 561E6494B55E0334EAAE4740 /* Pods_liveap.framework */; };
+		7F1392102A25CAB9009E79AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F13920F2A25CAB9009E79AF /* AppDelegate.swift */; };
+		7F1392122A25CAB9009E79AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1392112A25CAB9009E79AF /* SceneDelegate.swift */; };
+		7F1392142A25CAB9009E79AF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1392132A25CAB9009E79AF /* CalendarViewController.swift */; };
+		7F1392172A25CAB9009E79AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1392152A25CAB9009E79AF /* Main.storyboard */; };
+		7F1392192A25CABA009E79AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1392182A25CABA009E79AF /* Assets.xcassets */; };
+		7F13921C2A25CABA009E79AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F13921A2A25CABA009E79AF /* LaunchScreen.storyboard */; };
+		7F1392242A25D118009E79AF /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1392232A25D118009E79AF /* CalendarView.swift */; };
+		7F1392262A27AA46009E79AF /* ListScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1392252A27AA46009E79AF /* ListScheduleViewController.swift */; };
+		7F1392292A27AAF8009E79AF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7F1392282A27AAF8009E79AF /* Realm */; };
+		7F13922B2A27AAF8009E79AF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7F13922A2A27AAF8009E79AF /* RealmSwift */; };
+		7F13922D2A27AB8F009E79AF /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F13922C2A27AB8F009E79AF /* RealmData.swift */; };
+		7F13922F2A27B216009E79AF /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F13922E2A27B216009E79AF /* AddScheduleViewController.swift */; };
+		7F1392322A27B491009E79AF /* eventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1392302A27B491009E79AF /* eventTableViewCell.swift */; };
+		7F1392332A27B491009E79AF /* eventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1392312A27B491009E79AF /* eventTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		561E6494B55E0334EAAE4740 /* Pods_liveap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_liveap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7920681D23087EF4832C2C3D /* Pods-liveap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-liveap.release.xcconfig"; path = "Target Support Files/Pods-liveap/Pods-liveap.release.xcconfig"; sourceTree = "<group>"; };
+		7F13920C2A25CAB9009E79AF /* liveap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liveap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F13920F2A25CAB9009E79AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F1392112A25CAB9009E79AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F1392132A25CAB9009E79AF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		7F1392162A25CAB9009E79AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F1392182A25CABA009E79AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F13921B2A25CABA009E79AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F13921D2A25CABA009E79AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F1392232A25D118009E79AF /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		7F1392252A27AA46009E79AF /* ListScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScheduleViewController.swift; sourceTree = "<group>"; };
+		7F13922C2A27AB8F009E79AF /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		7F13922E2A27B216009E79AF /* AddScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleViewController.swift; sourceTree = "<group>"; };
+		7F1392302A27B491009E79AF /* eventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventTableViewCell.swift; sourceTree = "<group>"; };
+		7F1392312A27B491009E79AF /* eventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = eventTableViewCell.xib; sourceTree = "<group>"; };
+		DFC15981BE52975DBA35C951 /* Pods-liveap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-liveap.debug.xcconfig"; path = "Target Support Files/Pods-liveap/Pods-liveap.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F1392092A25CAB9009E79AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F13922B2A27AAF8009E79AF /* RealmSwift in Frameworks */,
+				7F1392292A27AAF8009E79AF /* Realm in Frameworks */,
+				21A145C3F0ADF1472CB72D23 /* Pods_liveap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F1392032A25CAB9009E79AF = {
+			isa = PBXGroup;
+			children = (
+				7F13920E2A25CAB9009E79AF /* liveap */,
+				7F13920D2A25CAB9009E79AF /* Products */,
+				E8D842B661ED4BD97D1111E2 /* Pods */,
+				DF81BEF7195192405E4DD4D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F13920D2A25CAB9009E79AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F13920C2A25CAB9009E79AF /* liveap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F13920E2A25CAB9009E79AF /* liveap */ = {
+			isa = PBXGroup;
+			children = (
+				7F13920F2A25CAB9009E79AF /* AppDelegate.swift */,
+				7F1392112A25CAB9009E79AF /* SceneDelegate.swift */,
+				7F1392132A25CAB9009E79AF /* CalendarViewController.swift */,
+				7F1392252A27AA46009E79AF /* ListScheduleViewController.swift */,
+				7F13922E2A27B216009E79AF /* AddScheduleViewController.swift */,
+				7F1392232A25D118009E79AF /* CalendarView.swift */,
+				7F13922C2A27AB8F009E79AF /* RealmData.swift */,
+				7F1392152A25CAB9009E79AF /* Main.storyboard */,
+				7F1392182A25CABA009E79AF /* Assets.xcassets */,
+				7F13921A2A25CABA009E79AF /* LaunchScreen.storyboard */,
+				7F13921D2A25CABA009E79AF /* Info.plist */,
+				7F1392302A27B491009E79AF /* eventTableViewCell.swift */,
+				7F1392312A27B491009E79AF /* eventTableViewCell.xib */,
+			);
+			path = liveap;
+			sourceTree = "<group>";
+		};
+		DF81BEF7195192405E4DD4D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				561E6494B55E0334EAAE4740 /* Pods_liveap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8D842B661ED4BD97D1111E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFC15981BE52975DBA35C951 /* Pods-liveap.debug.xcconfig */,
+				7920681D23087EF4832C2C3D /* Pods-liveap.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F13920B2A25CAB9009E79AF /* liveap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F1392202A25CABA009E79AF /* Build configuration list for PBXNativeTarget "liveap" */;
+			buildPhases = (
+				A58567E95E923147CD2C20DE /* [CP] Check Pods Manifest.lock */,
+				7F1392082A25CAB9009E79AF /* Sources */,
+				7F1392092A25CAB9009E79AF /* Frameworks */,
+				7F13920A2A25CAB9009E79AF /* Resources */,
+				D541CE0B870FE2727503C62D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = liveap;
+			packageProductDependencies = (
+				7F1392282A27AAF8009E79AF /* Realm */,
+				7F13922A2A27AAF8009E79AF /* RealmSwift */,
+			);
+			productName = liveap;
+			productReference = 7F13920C2A25CAB9009E79AF /* liveap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F1392042A25CAB9009E79AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7F13920B2A25CAB9009E79AF = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 7F1392072A25CAB9009E79AF /* Build configuration list for PBXProject "liveap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F1392032A25CAB9009E79AF;
+			packageReferences = (
+				7F1392272A27AAF8009E79AF /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 7F13920D2A25CAB9009E79AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F13920B2A25CAB9009E79AF /* liveap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F13920A2A25CAB9009E79AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1392332A27B491009E79AF /* eventTableViewCell.xib in Resources */,
+				7F13921C2A25CABA009E79AF /* LaunchScreen.storyboard in Resources */,
+				7F1392192A25CABA009E79AF /* Assets.xcassets in Resources */,
+				7F1392172A25CAB9009E79AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A58567E95E923147CD2C20DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-liveap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D541CE0B870FE2727503C62D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-liveap/Pods-liveap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-liveap/Pods-liveap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-liveap/Pods-liveap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F1392082A25CAB9009E79AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1392322A27B491009E79AF /* eventTableViewCell.swift in Sources */,
+				7F1392142A25CAB9009E79AF /* CalendarViewController.swift in Sources */,
+				7F13922D2A27AB8F009E79AF /* RealmData.swift in Sources */,
+				7F1392102A25CAB9009E79AF /* AppDelegate.swift in Sources */,
+				7F13922F2A27B216009E79AF /* AddScheduleViewController.swift in Sources */,
+				7F1392262A27AA46009E79AF /* ListScheduleViewController.swift in Sources */,
+				7F1392242A25D118009E79AF /* CalendarView.swift in Sources */,
+				7F1392122A25CAB9009E79AF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F1392152A25CAB9009E79AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F1392162A25CAB9009E79AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F13921A2A25CABA009E79AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F13921B2A25CABA009E79AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F13921E2A25CABA009E79AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F13921F2A25CABA009E79AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F1392212A25CABA009E79AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFC15981BE52975DBA35C951 /* Pods-liveap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = liveap/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.mori.dars.liveap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F1392222A25CABA009E79AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7920681D23087EF4832C2C3D /* Pods-liveap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = liveap/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.mori.dars.liveap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F1392072A25CAB9009E79AF /* Build configuration list for PBXProject "liveap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F13921E2A25CABA009E79AF /* Debug */,
+				7F13921F2A25CABA009E79AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F1392202A25CABA009E79AF /* Build configuration list for PBXNativeTarget "liveap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F1392212A25CABA009E79AF /* Debug */,
+				7F1392222A25CABA009E79AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F1392272A27AAF8009E79AF /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F1392282A27AAF8009E79AF /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F1392272A27AAF8009E79AF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		7F13922A2A27AAF8009E79AF /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F1392272A27AAF8009E79AF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7F1392042A25CAB9009E79AF /* Project object */;
+}
