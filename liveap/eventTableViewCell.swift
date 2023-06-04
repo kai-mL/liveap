@@ -8,6 +8,8 @@
 import UIKit
 
 class eventTableViewCell: UITableViewCell {
+    
+    @IBOutlet var titleLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,4 +22,7 @@ class eventTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setCell(title: String) {
+        titleLabel.text = title
+    }
 }

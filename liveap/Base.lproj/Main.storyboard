@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hLO-9G-YbJ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -55,9 +55,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2WU-4O-Fdd" customClass="FSCalendar">
-                                <rect key="frame" x="17" y="136" width="358" height="422"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2WU-4O-Fdd" customClass="FSCalendar">
+                                <rect key="frame" x="16" y="139" width="361" height="420"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="tintColor" systemColor="systemPurpleColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -73,6 +72,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Kc-od-euc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2WU-4O-Fdd" firstAttribute="leading" secondItem="9Kc-od-euc" secondAttribute="leading" constant="16" id="DG8-L0-jGx"/>
+                            <constraint firstItem="9Kc-od-euc" firstAttribute="bottom" secondItem="2WU-4O-Fdd" secondAttribute="bottom" constant="210" id="P5z-u0-Wd8"/>
+                            <constraint firstItem="9Kc-od-euc" firstAttribute="trailing" secondItem="2WU-4O-Fdd" secondAttribute="trailing" constant="16" id="oey-oM-WNA"/>
+                            <constraint firstItem="2WU-4O-Fdd" firstAttribute="top" secondItem="9Kc-od-euc" secondAttribute="top" constant="80" id="rYL-Kw-p7F"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" id="OYu-cS-8rO" userLabel="Calendar"/>
                     <connections>
@@ -116,15 +121,19 @@
                                     <navigationItem title="Title" id="s5u-wr-NcV">
                                         <barButtonItem key="leftBarButtonItem" title="戻る" id="FQT-ls-aS0">
                                             <connections>
-                                                <segue destination="qec-M8-bny" kind="presentation" modalPresentationStyle="fullScreen" id="Qd4-xV-jaL"/>
+                                                <action selector="backButtonActionWith_sender:" destination="er9-Yr-nOO" id="WtL-Cr-pDr"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="20Z-HN-Vhf"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="20Z-HN-Vhf">
+                                            <connections>
+                                                <action selector="save" destination="er9-Yr-nOO" id="hZG-bN-6pA"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="bZE-O9-z8o">
-                                <rect key="frame" x="214" y="226" width="179" height="72"/>
+                                <rect key="frame" x="213" y="226" width="180" height="72"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="公演名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O50-6g-w7L">
@@ -176,11 +185,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="P0q-hq-idd">
-                                <rect key="frame" x="214" y="310" width="179" height="72"/>
+                                <rect key="frame" x="213" y="310" width="180" height="72"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </datePicker>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="crn-Cp-tnW">
-                                <rect key="frame" x="214" y="390" width="179" height="72"/>
+                                <rect key="frame" x="213" y="390" width="180" height="72"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </datePicker>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Mc-5v-nmv">
@@ -219,9 +228,6 @@
             <point key="canvasLocation" x="1754.9618320610687" y="288.73239436619718"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Qd4-xV-jaL"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
