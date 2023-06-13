@@ -69,6 +69,20 @@
                                     <outlet property="delegate" destination="9nz-E6-T1f" id="wJe-rq-acH"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phv-El-Hb1">
+                                <rect key="frame" x="47" y="581" width="170" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D17-ge-oBr">
+                                <rect key="frame" x="47" y="671" width="305" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Kc-od-euc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -82,11 +96,13 @@
                     <tabBarItem key="tabBarItem" title="Calendar" id="OYu-cS-8rO" userLabel="Calendar"/>
                     <connections>
                         <outlet property="calendar" destination="2WU-4O-Fdd" id="uZJ-gl-n2d"/>
+                        <outlet property="dateLabel" destination="phv-El-Hb1" id="eCS-3f-IiQ"/>
+                        <outlet property="eventLabel" destination="D17-ge-oBr" id="d2b-U2-FQs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fK-9D-WxL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="691" y="-491"/>
+            <point key="canvasLocation" x="690.83969465648852" y="-491.54929577464793"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8Uh-kZ-534">
