@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 import FSCalendar
 import RealmSwift
 
@@ -16,8 +17,7 @@ class CalendarViewController: UIViewController,FSCalendarDataSource,FSCalendarDe
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var eventLabel: UILabel!
     let df = DateFormatter()
-    let realmDatas = realm.objects(RealmData.self)
-    
+    var realmDatas = [RealmData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,18 +28,24 @@ class CalendarViewController: UIViewController,FSCalendarDataSource,FSCalendarDe
         view.addSubview(calendar)
         view.addSubview(dateLabel)
         
-        
-        if df == realmDatas.eventDate {
-            eventLabel.text = String(realmDatas.eventTitle)
-        }else if df == realmDatas.entryResultDate {
-            eventLabel.text = String(realmDatas.eventTitle + "当落日")
-        }else if df == realmDatas.moneyDate {
-            eventLabel.text = String(realmDatas.eventTitle + "入金日")
-        }
-        
+        var realmDataas = Array(realm.objects(RealmData.self))
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        var eventDateArray = realmDatas.filter({ date == $0.eventDate })
+        var entryResultArray = realmDatas.filter({ date == $0.entryResultDate })
+        var moneyDateArray = realmDatas.filter({ date == $0.moneyDate })
+        
+        if eventDateArray.isEmpty == false {
+            eventLabel.text = eventDateArray[0].eventTitle
+        }else if entryResultArray.isEmpty == false {
+            eventLabel.text = "\(eventDateArray[0].eventTitle) + 当落日"
+        }else if moneyDateArray.isEmpty == false {
+            eventLabel.text = "\(eventDateArray[0].eventTitle) + 入金日"
+        }else {
+            eventLabel.text = ""
+        }
+        
            df.dateFormat = "yyyy-MM-dd"
            dateLabel.text = df.string(from: date)
        }
